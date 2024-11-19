@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PÁGINA LOGIN</title>
+
+    <!--Incluindo o arquivo de estilização-->
+    <link rel="stylesheet" href="styles_index.css" />
+  </head>
+
+  <body>
+    <header class="loginHeader">
+      <section class="loginHomeButton">
+        <button onclick="window.location.href='index.html'">Home</button>
+      </section>
+      <section class="loginImage">
+        <img src="senaisplogo (1).png" alt="Logo SENAI" />
+      </section>
+    </header>
+
+    <main>
+      <form id="formulariologin">
+        <section class="loginGap">
+          <div class="loginButCad">
+            <label for="email"> EMAIL: </label>
+            <input
+              id="email"
+              type="text"
+              placeholder="email"
+              class="input-box-login"
+            />
+            <br />
+            <label for="senha"> SENHA: </label>
+            <input
+              id="senha"
+              type="text"
+              placeholder="Senha"
+              class="input-box-login"
+            />
+            <br />
+            <input id="login" type="submit" value="Fazer login" class="input-box-login" />
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <footer class="loginFooter">
+      <section class="loginAgenBut">
+        <button onclick="window.location.href='agendamento.html'"> <!-- Referencia para o botão no de agendamento -->
+          AGENDAMENTO
+        </button>
+      </section>
+    </footer>
+    <script src="app.js"></script> <!-- Parte de comunicação com app.js, todos os códigos tem esse comando ao final -->
+  </body>
+</html>

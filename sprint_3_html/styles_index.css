@@ -1,0 +1,225 @@
+/*Seletor Universal - seleciona todos os elementos da página e aplica estilos comuns padronizados*/
+/* Tudo que tem aqui antes da marcação é universal, acontece em todas as paginas*/
+*{
+    margin: 0; /*remove a margem padrão de todos os elementos*/
+    padding: 0; /*remove o padding de todos os elementos*/
+    box-sizing: border-box; /*inclui bordas e preenchimentos no calculo da largura e altura dos elementos*/
+}
+body{
+    font-family:Arial, sans-serif; /*Define a fonte da página como Arial, com uma alternativa de sans-serif*/
+    background-image: url(fundo.png); /*Define a imagem de fund do body / corpo do html*/
+    color: #FFFFFF /*Define a cor do texto com um tom suave de branco*/
+}
+header{
+    background-color: #FF0000; /* Cor de fundo em hexadecimal*/
+    padding: 30px; /* Criação de espaço entre elementos da página criada */
+}
+footer{ /* Rodapé geral */
+    background-color: #FF0000;
+    padding: 30px; 
+    bottom:0; /*Alinha o rodapé abaixo da página*/
+    position: absolute; /*Posiciona o rodapé de forma absoluta em relação ao body*/
+    width: 100%; /*Define a largura do rodapé como 100% da janela de visualização*/
+}
+/*=================================== Index page =====================================*/
+.indexPage h3{ /* texto "Página home" */
+    font-size: 24px; /* Determina o tamanho da fonte */
+    font-weight: bold; /* Coloca fonte como negrito */ 
+    text-align: center; /*Alinha o texto do cabeçalho ao centro*/
+    margin: 0;
+    padding: 0;
+}
+.indexPage button{ /* Botão de login */
+    right: 20px; /*Alinha o botão á direita, com 20px de ditância da borda direita da página */
+    top: 20px; /*Alinha o botão ao topo, com 20px de distância da borda superior*/
+    position: absolute; /*Posiciona o botão de forma absoluta com relação ao cabeçalho*/
+    background-color: #D5CFCF; /* Define a cor de fundo do botão login */ 
+    color: #FFFFFF; 
+    font-weight: bold;
+    font-size: 24px;
+    padding: 15px 25px; /*Define o espaço interno do botão em 10px (vertical) e 20px (horizontal)*/
+    border-radius: 5px; /*Arredonda os cantos do botão*/
+    border: none; /*Remove a borda padrão do botão*/
+    cursor: pointer; /*Define o cursor como um ponteiro ao passar sobre o botão*/
+}
+.indexPage section button{ /* Botão de cadastro */
+    right: 1110px; /*Alinha o botão á direita, com 20px de ditância da borda direita da página */
+    top: 20px; /*Alinha o botão ao topo, com 20px de distância da borda superior*/
+    position: absolute; /*Posiciona o botão de forma absoluta com relação ao cabeçalho*/
+    background-color: #D5CFCF;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 15px 25px; /*Define o espaço interno do botão em 10px (vertical) e 20px (horizontal)*/
+    border-radius: 5px; /*Arredonda os cantos do botão*/
+    border: none; /*Remove a borda padrão do botão*/
+    cursor: pointer; /*Define o cursor como um ponteiro ao passar sobre o botão*/
+}
+.indexMain {
+    padding: 30px;
+    text-align: center; /* Alinha texto ao centro do formato exigido, ou bloco */
+}
+.indexImage img{
+    margin-top: 80px; /* Espaçamento entre o título e os botões */
+    max-width: 500px; /*Define a largura máxima das imagens dentro da main como 150px*/
+    border-radius: 10px;
+}
+.footerIndex{ /*Estilo do rodapé / footer*/
+    background-color: #FF0000; /* Define a cor do fundo, background */
+    padding: 20px;
+    font-size: 20px; /* Tamanho da fonte  */
+    text-align: center; /*Alinha o texto do rodapé ao centro*/
+    bottom:0; /*Alinha o rodapé abaixo da página*/
+    position: absolute; /*Posiciona o rodapé de forma absoluta em relação ao body*/
+    width: 100%; /*Define a largura do rodapé como 100% da janela de visualização*/
+}
+.footerIndex p{
+    color: #FFFFFF;
+}
+/*=================================================== Login page =============================================*/
+.loginHeader{   
+    padding: 2px; 
+}
+.loginImage img{
+    display: block; /* Necessário para que as margens funcionem */
+    margin: 0 auto;
+    max-width: 300px; 
+    margin-top: 12px;
+}
+.loginHomeButton button{ /* Botão home */
+    right: 20px; /*Alinha o botão á direita, com 20px de ditância da borda direita da página */
+    position: absolute; /*Posiciona o botão de forma absoluta com relação ao cabeçalho*/
+    background-color: #D5CFCF;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 25px;
+    padding: 15px 30px; /*Define o espaço interno do botão em 10px (vertical) e 20px (horizontal)*/
+    border-radius: 5px; /*Arredonda os cantos do botão*/
+    border: none; /*Remove a borda padrão do botão*/
+    cursor: pointer; /*Deftop: 25px;ine o cursor como um ponteiro ao passar sobre o botão*/
+}
+.loginAgenBut button{ /* Botão de agendamento */
+    right: 540px;
+    padding: 5px 22px; /*Define o espaço interno do botão em 10px (vertical) e 20px (horizontal)*/
+    border-radius: 5px; /*Arredonda os cantos do botão*/
+    border: none;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer; /*Define o cursor como um ponteiro ao passar sobre o botão*/
+    background-color: #D20114;
+    position: absolute; /*Posiciona o rodapé de forma absoluta em relação ao body*/
+    bottom:0; /*Alinha o rodapé abaixo da página*/
+    font-size: 20px;
+    font-weight: bold;
+    height: 90%;
+}
+.loginButCad label{
+    font-weight: bold;
+    color:#FFFFFF;
+    font-size: 20px;
+}
+.loginButCad{ /*Caixinha de login*/
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 5px 5px; /*Define o espaço interno do botão em 10px (vertical) e 20px (horizontal)*/
+    border-radius: 30px; /*Arredonda os cantos do botão*/
+    border: none;
+    background-color: #B10A0A;
+    max-width: 600px;
+    width: 250px;
+    margin: auto;
+    text-align: center; /* Centraliza o texto */
+}
+.input-box-login{
+    background-color: rgb(255, 255, 255); /* Cor de fundo do botão */
+    padding: 15px 20px; /*Define o espaço interno do botão em 10px (vertical) e 20px (horizontal)*/
+    border-radius: 5px; /*Arredonda os cantos do botão*/
+    border: none;
+    margin-top: 25px; /* Espaçamento entre o título e os botões */
+    font-weight: bold;
+    color: #ff0000;
+    cursor: pointer; /*Define o cursor como um ponteiro ao passar sobre o botão*/
+}
+.loginFooter { /* Rodapé */
+    padding: 30px 50px; /*Define o espaço interno do botão em 10px (vertical) e 20px (horizontal)*/
+}
+.loginGap{
+    margin: 65px auto;
+}
+/*=============================== Cadastro page =========================*/
+.headerCad{
+    padding: 2px; 
+}
+.cadTitle h3{
+    text-align: center; /*Alinha o texto do rodapé ao centro*/
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.cadImage img{ /* Logo do Senai */
+    display: block; /* Necessário para que as margens funcionem */
+    margin: 0 auto;
+    max-width: 300px; /*Define a largura máxima das imagens dentro da main como 150px*/
+    margin-top: 12px;
+}
+.cadHomeBut button{ /* Botão home */
+    right: 20px; /*Alinha o botão á direita, com 20px de ditância da borda direita da página */
+    top: 32px; /*Alinha o botão ao topo, com 20px de distância da borda superior*/
+    position: absolute; /*Posiciona o botão de forma absoluta com relação ao cabeçalho*/
+    background-color: #D5CFCF;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 15px 25px; /*Define o espaço interno do botão em 10px (vertical) e 20px (horizontal)*/
+    border-radius: 5px; /*Arredonda os cantos do botão*/
+    border: none; /*Remove a borda padrão do botão*/
+    cursor: pointer; /*Define o cursor como um ponteiro ao passar sobre o botão*/
+}
+.cadButtons{ /*Caixinha de cadastro*/
+    font-weight: bold;
+    margin-top: -25px; /* Espaçamento entre o título e os botões */
+    color: #FFFFFF;
+    padding: 5px 5px; /*Define o espaço interno do botão em 10px (vertical) e 20px (horizontal)*/
+    border-radius: 30px; /*Arredonda os cantos do botão*/
+    border: none;
+    background-color: #B10A0A;
+    max-width: 800px;
+    width: 325px;
+    text-align: center; /* Centraliza o texto */
+    margin: auto;
+    cursor: pointer; /*Define o cursor como um ponteiro ao passar sobre o botão*/
+}
+.cadButtons label{
+    position: absolute;
+    width: 70%; 
+    font-weight: bold;
+    color:#ffffff;
+    font-size: 20px;
+}
+.input-box-cad{
+    background-color: rgb(255, 255, 255); /* Cor de fundo do bloco */
+    padding: 15px 25px; /*Define o espaço interno do botão em 10px (vertical) e 20px (horizontal)*/
+    border-radius: 5px; /*Arredonda os cantos do botão*/
+    border: none;
+    margin-top: 15px; /* Espaçamento entre o título e os botões */
+    font-weight: bold;
+    color: #ff0000;
+    cursor: pointer; /*Define o cursor como um ponteiro ao passar sobre o botão*/
+}
+
+/*======================== Agendamento page ================================*/
+.headerAgen{
+    padding: 2px;
+}
+.agenImage img{ /* Logo do Senai */
+    display: block; /* Necessário para que as margens funcionem */
+    margin: 0 auto;
+    max-width: 300px; /*Define a largura máxima das imagens dentro da main como 150px*/
+    margin-top: 12px;
+}
+
+/* Cada separação tem um html como "Hospedeiro" no qual é atribuido ao html */
+/* A logo senaisplogo (1).png é atribuida a todas as paginas html */
+/* Toda classe vem com o nome do arquivo html e o complemento ex: agenHeader ou headerAgen */
+/* Qualquer duvida utilizar o black box para adição de comentários sobre as linhas de programação do código */
