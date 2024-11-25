@@ -108,6 +108,7 @@ footer{ /* Rodapé geral */
     font-size: 24px;
     cursor: pointer; /*Define o cursor como um ponteiro ao passar sobre o botão*/
     background-color: #D20114;
+    color: #FFFFFF;
     position: absolute; /*Posiciona o rodapé de forma absoluta em relação ao body*/
     bottom:0; /*Alinha o rodapé abaixo da página*/
     font-size: 20px;
@@ -217,6 +218,31 @@ footer{ /* Rodapé geral */
     margin: 0 auto;
     max-width: 300px; /*Define a largura máxima das imagens dentro da main como 150px*/
     margin-top: 12px;
+}
+
+.titleAgen1 h1{
+    text-align: center;
+    background-color: #D20114;
+}
+
+.chooseDateAgen1{
+    font-weight: bold;
+    margin-top: -25px; /* Espaçamento entre o título e os botões */
+    color: #FFFFFF;
+    padding: 5px 5px; /*Define o espaço interno do botão em 10px (vertical) e 20px (horizontal)*/
+    border-radius: 30px; /*Arredonda os cantos do botão*/
+    border: none;
+    background-color: #B10A0A;
+    max-width: 800px;
+    width: 325px;
+    text-align: center; /* Centraliza o texto */
+    margin: auto;
+    cursor: pointer; /*Define o cursor como um ponteiro ao passar sobre o botão*/
+}
+
+.formulariohora{
+    display: flex;
+    color: #FFFFFF;
 }
 
 /* Cada separação tem um html como "Hospedeiro" no qual é atribuido ao html */
