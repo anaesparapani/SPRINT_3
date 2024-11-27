@@ -15,14 +15,16 @@
       </section>
     </header>
 
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
 
     <main>
       <section class="chooseDateAgen1">
+        <!-- Classe para a estilização no arquivo css -->
         <h1>Selecione uma data</h1>
         <form id="form-selecao-data">
+          <!-- ID para escolha da data -->
           <label for="data">Escolha a data:</label>
           <input
             type="date"
@@ -36,13 +38,14 @@
         </form>
 
         <form id="form-selecao-horario">
+          <!-- ID para escolha do horário -->
           <label for="data">Escolha o horário:</label>
           <input
             type="time"
             id="hora"
-            name="horario"
-            min="07:30:00"
-            max="22:30:00"
+            name="hora"
+            min="07:30"
+            max="22:30"
             required
             class="input-box-hora"
           />
@@ -50,16 +53,17 @@
 
         <label>Salas de aula</label>
         <select id="sala" class="input-box-sala"></select>
+        <!-- ID para escolha da sala (menu dropdown) -->
 
-        <br>
+        <br />
 
-        <input type="submit" value="Reservar" 
-        class="input-botao-reserva"
-        />
+        <!-- Botão para reserva -->
+        <input type="submit" value="Reservar" class="input-botao-reserva" />
       </section>
     </main>
 
-    <footer></footer>
-    <script src="appAgendamento.js"></script> <!-- Para fazer a comunicação com o appAgendamento.js -->
+    <footer class="agenFooter"></footer>
+    <script src="appAgendamento.js"></script>
+    <!-- Para fazer a comunicação com o appAgendamento.js -->
   </body>
 </html>
