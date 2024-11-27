@@ -220,11 +220,6 @@ footer{ /* Rodapé geral */
     margin-top: 12px;
 }
 
-.titleAgen1 h1{
-    text-align: center;
-    background-color: #D20114;
-}
-
 .chooseDateAgen1{
     font-weight: bold;
     margin-top: -25px; /* Espaçamento entre o título e os botões */
@@ -240,9 +235,48 @@ footer{ /* Rodapé geral */
     cursor: pointer; /*Define o cursor como um ponteiro ao passar sobre o botão*/
 }
 
-.formulariohora{
-    display: flex;
-    color: #FFFFFF;
+.input-box-data{
+    background-color: rgb(255, 255, 255); /* Cor de fundo do botão */
+    padding: 15px 20px; /*Define o espaço interno do botão em 10px (vertical) e 20px (horizontal)*/
+    border-radius: 5px; /*Arredonda os cantos do botão*/
+    border: none;
+    margin-top: 25px; /* Espaçamento entre o título e os botões */
+    font-weight: bold;
+    color: black;
+    cursor: pointer; /*Define o cursor como um ponteiro ao passar sobre o botão*/
+}
+
+.input-box-hora{
+    background-color: rgb(255, 255, 255); /* Cor de fundo do botão */
+    padding: 15px 20px; /*Define o espaço interno do botão em 10px (vertical) e 20px (horizontal)*/
+    border-radius: 5px; /*Arredonda os cantos do botão*/
+    border: none;
+    margin-top: 25px; /* Espaçamento entre o título e os botões */
+    font-weight: bold;
+    color: black;
+    cursor: pointer; /*Define o cursor como um ponteiro ao passar sobre o botão*/
+}
+
+.input-box-sala{
+    background-color: rgb(255, 255, 255); /* Cor de fundo do botão */
+    padding: 15px 20px; /*Define o espaço interno do botão em 10px (vertical) e 20px (horizontal)*/
+    border-radius: 5px; /*Arredonda os cantos do botão*/
+    border: none;
+    margin-top: 25px; /* Espaçamento entre o título e os botões */
+    font-weight: bold;
+    color: black;
+    cursor: pointer; /*Define o cursor como um ponteiro ao passar sobre o botão*/
+}
+
+.input-botao-reserva{
+    background-color: rgb(255, 255, 255); /* Cor de fundo do bloco */
+    padding: 15px 25px; /*Define o espaço interno do botão em 10px (vertical) e 20px (horizontal)*/
+    border-radius: 5px; /*Arredonda os cantos do botão*/
+    border: none;
+    margin-top: 15px; /* Espaçamento entre o título e os botões */
+    font-weight: bold;
+    color: #ff0000;
+    cursor: pointer; /*Define o cursor como um ponteiro ao passar sobre o botão*/
 }
 
 /* Cada separação tem um html como "Hospedeiro" no qual é atribuido ao html */
