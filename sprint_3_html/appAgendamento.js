@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", getAllSalas);
 
 function getAllSalas() {
   // Faz a requisição GET para o endpoint
-  fetch("http://10.89.240.74:5000/agensala/reservas", {
+  fetch("http://10.89.240.74:5000/agensala/salas", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -30,12 +30,10 @@ function getAllSalas() {
       data.salas.forEach((sala) => {
         const option = document.createElement("option");
         option.value = sala.id; // Substitua pelo campo correto para o ID da sala
-        option.textContent = sala.numero_da_sala; // Substitua pelo campo correto para o nome da sala
+        option.textContent = sala.nome_da_sala; // Substitua pelo campo correto para o nome da sala
         selectSala.appendChild(option);
       });
 
-      // Adiciona o listener para exibir informações da sala selecionada
-      selectSala.addEventListener("change", () => mostrarInfoSala(data.salas));
     })
     .catch((error) => {
       alert("Erro ao obter salas: " + error.message);
